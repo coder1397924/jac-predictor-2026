@@ -1,0 +1,6 @@
+{
+  "name": "JAC DELHI cutoff predictor 2026 with AI",
+  "description": "Historical trend analysis and 2026 predictions with AI counseling for all 18 branches across General (GNGND), EWS (EWGND), and OBC (OBGND) Delhi candidates in NSUT and DTU.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
