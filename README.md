@@ -72,9 +72,9 @@ Follow these steps to get a local copy up and running on your machine.
 git clone [https://github.com/kavyaGupta747/JAC-Delhi-cutoff-predictor-2026-with-AI.git](https://github.com/kavyaGupta747/JAC-Delhi-cutoff-predictor-2026-with-AI.git)
 cd JAC-Delhi-cutoff-predictor-2026-with-AI
 
-🕒 Latest Updates (July 2026)
-v2.0.0 (July 2026):
+### 🕒 Latest Updates (July 2026)
+- v2.0.0 (July 2026):
 Integrated Official Round 2 Cutoff Data for all participating institutes (DTU, NSUT, IIIT-D, and IGDTUW).
 Refined prediction engine logic to account for actual Round 2 closing ranks.
 Updated UI labels to clearly distinguish between "Predicted" and "Actual" cutoff status.
-v1.0.0 (June 2026): Initial launch with historical data (2021-2025) and Round 1 integration.
+- v1.0.0 (June 2026): Initial launch with historical data (2021-2025) and Round 1 integration.
