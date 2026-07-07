@@ -43,6 +43,7 @@ export interface Prediction2026 {
   worstCase: PredictScenario;
   trueOutcome: PredictScenario;
   actualR1: number;
+  actualR2?: number;
 }
 
 export interface AnalysisSummary {

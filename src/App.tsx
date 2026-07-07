@@ -51,6 +51,11 @@ export default function App() {
   const PREDICTIONS_2026 = useMemo(() => getPredictionsForCategory(selectedCategory), [selectedCategory]);
   const HISTORICAL_CUTOFFS = useMemo(() => getHistoricalCutoffsForCategory(selectedCategory), [selectedCategory]);
   
+  // Check if Round 2 data is out for this category
+  const isR2Out = useMemo(() => {
+    return Object.values(PREDICTIONS_2026).some(p => p.actualR2 && p.actualR2 > 0);
+  }, [PREDICTIONS_2026]);
+
   // Counselor chat states
   const [chatInput, setChatInput] = useState('');
   const [chatHistory, setChatHistory] = useState<Array<{ role: 'user' | 'model'; text: string }>>([
@@ -83,9 +88,9 @@ export default function App() {
           'Upgradation': r.upgradation
         })),
         {
-          year: '2026 (Pred)',
+          year: '2026',
           'Round 1': scenario.actualR1,
-          'Round 2': scenario.trueOutcome.r2,
+          'Round 2': scenario.actualR2 || scenario.trueOutcome.r2,
           'Round 3': scenario.trueOutcome.r3,
           'Round 4': scenario.trueOutcome.r4,
           'Round 5 (If happens)': scenario.trueOutcome.r5,
@@ -226,9 +231,9 @@ export default function App() {
               JAC Delhi 2026 Prediction Engine
             </h1>
             <div className="flex flex-col md:flex-row gap-2 mt-2 items-start md:items-center">
-              <span className="text-emerald-400 font-bold bg-emerald-400/10 border border-emerald-400/20 px-2 py-0.5 rounded text-[10px] font-mono tracking-widest uppercase">Creator: IRONMANWASRYT</span>
+              <span className="text-emerald-400 font-bold bg-emerald-400/10 border border-emerald-400/20 px-2 py-0.5 rounded text-[10px] font-mono tracking-widest uppercase">Creator: IRONMANWASRYT & coder1397924</span>
               <p className="text-[10px] md:text-xs font-mono text-cyan-400 tracking-widest uppercase">
-                Data Source: Official 2026 R1 & Historic Trends
+                Data Source: Official 2026 Cutoff & Historic Trends
               </p>
             </div>
           </div>
@@ -537,8 +542,8 @@ export default function App() {
                         <thead className="bg-slate-800/80 text-cyan-400 uppercase tracking-wider font-mono">
                           <tr>
                             <th className="p-3 border-b border-slate-700 font-semibold">Branch</th>
-                            <th className="p-3 border-b border-slate-700 font-semibold">R1 (Actual)</th>
-                            <th className="p-3 border-b border-slate-700 font-semibold">R2</th>
+                            <th className="p-3 border-b border-slate-700 font-semibold text-[10px]">R1 (Actual)</th>
+                            <th className="p-3 border-b border-slate-700 font-semibold">{isR2Out ? 'R2 (Actual)' : 'R2'}</th>
                             <th className="p-3 border-b border-slate-700 font-semibold">R3</th>
                             <th className="p-3 border-b border-slate-700 font-semibold">R4</th>
                             <th className="p-3 border-b border-slate-700 font-semibold">R5 (If happens)</th>
@@ -562,7 +567,9 @@ export default function App() {
                                   </span>
                                 </td>
                                 <td className="p-3 font-mono text-slate-400">{pred.actualR1.toLocaleString()}</td>
-                                <td className="p-3 font-mono text-slate-200">{pred.trueOutcome.r2.toLocaleString()}</td>
+                                <td className="p-3 font-mono text-slate-200">
+                                  {pred.actualR2 ? pred.actualR2.toLocaleString() : pred.trueOutcome.r2.toLocaleString()}
+                                </td>
                                 <td className="p-3 font-mono text-slate-200">{pred.trueOutcome.r3.toLocaleString()}</td>
                                 <td className="p-3 font-mono text-slate-200">{pred.trueOutcome.r4.toLocaleString()}</td>
                                 <td className="p-3 font-mono text-slate-200">{pred.trueOutcome.r5.toLocaleString()}</td>
@@ -594,8 +601,8 @@ export default function App() {
                         <thead className="bg-slate-800/80 text-red-400 uppercase tracking-wider font-mono">
                           <tr>
                             <th className="p-3 border-b border-slate-700 font-semibold">Branch</th>
-                            <th className="p-3 border-b border-slate-700 font-semibold">R1 (Actual)</th>
-                            <th className="p-3 border-b border-slate-700 font-semibold">R2</th>
+                            <th className="p-3 border-b border-slate-700 font-semibold text-[10px]">R1 (Actual)</th>
+                            <th className="p-3 border-b border-slate-700 font-semibold">{isR2Out ? 'R2 (Actual)' : 'R2'}</th>
                             <th className="p-3 border-b border-slate-700 font-semibold">R3</th>
                             <th className="p-3 border-b border-slate-700 font-semibold">R4</th>
                             <th className="p-3 border-b border-slate-700 font-semibold">R5 (If happens)</th>
@@ -619,7 +626,9 @@ export default function App() {
                                   </span>
                                 </td>
                                 <td className="p-3 font-mono text-slate-400">{pred.actualR1.toLocaleString()}</td>
-                                <td className="p-3 font-mono text-slate-200">{pred.worstCase.r2.toLocaleString()}</td>
+                                <td className="p-3 font-mono text-slate-200">
+                                  {pred.actualR2 ? pred.actualR2.toLocaleString() : pred.worstCase.r2.toLocaleString()}
+                                </td>
                                 <td className="p-3 font-mono text-slate-200">{pred.worstCase.r3.toLocaleString()}</td>
                                 <td className="p-3 font-mono text-slate-200">{pred.worstCase.r4.toLocaleString()}</td>
                                 <td className="p-3 font-mono text-slate-200">{pred.worstCase.r5.toLocaleString()}</td>

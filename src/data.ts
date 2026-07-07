@@ -13,15 +13,12 @@ export const BRANCHES: Record<BranchCode, BranchInfo> = {
   NSUT_ICE:  { code: 'NSUT_ICE',  college: 'NSUT', name: 'Instrumentation & Control', campus: 'NSUT Main', description: 'Sensory devices, SCADA, industrial automation transmitters, and robotics.', duration: '4 Years', intake: 120 },
   NSUT_ME:   { code: 'NSUT_ME',   college: 'NSUT', name: 'Mechanical Engineering', campus: 'NSUT Main', description: 'Thermodynamics, computational fluid dynamics (CFD), and structural dynamics.', duration: '4 Years', intake: 120 },
   NSUT_BT:   { code: 'NSUT_BT',   college: 'NSUT', name: 'Bio-Technology', campus: 'NSUT Main', description: 'Genetic engineering, bioinformatics, and fermentation technology.', duration: '4 Years', intake: 60 },
-  // ✅ East Campus branches (introduced 2022 onwards)
   NSUT_CSDA: { code: 'NSUT_CSDA', college: 'NSUT', name: 'CS (Big Data Analytics)', campus: 'NSUT East', description: 'East campus specialization centering on modern enterprise databases.', duration: '4 Years', intake: 60 },
   NSUT_CIOT: { code: 'NSUT_CIOT', college: 'NSUT', name: 'CS (Internet of Things)', campus: 'NSUT East', description: 'Embedded firmware, hardware sensors, and wireless networks.', duration: '4 Years', intake: 60 },
   NSUT_ECAM: { code: 'NSUT_ECAM', college: 'NSUT', name: 'Electronics (AI & ML)', campus: 'NSUT East', description: 'Electronics branch integrated with ML accelerators and neural processors.', duration: '4 Years', intake: 120 },
-  // ✅ West Campus branches
   NSUT_MEEV: { code: 'NSUT_MEEV', college: 'NSUT', name: 'Mechanical (Electric Vehicles)', campus: 'NSUT West', description: 'Specialization on EV drivetrains, lithium battery packs, and solid-state safety.', duration: '4 Years', intake: 60 },
   NSUT_CE:   { code: 'NSUT_CE',   college: 'NSUT', name: 'Civil Engineering', campus: 'NSUT West', description: 'Structural blueprints, urban transit, and geotechnical mapping.', duration: '4 Years', intake: 60 },
   NSUT_GI:   { code: 'NSUT_GI',   college: 'NSUT', name: 'Geoinformatics', campus: 'NSUT West', description: 'Spatial modeling mapping, drone surveying, and GIS mapping.', duration: '4 Years', intake: 60 },
-  // DTU
   DTU_COE:   { code: 'DTU_COE',   college: 'DTU', name: 'Computer Science and Engineering', campus: 'DTU Main', description: 'Core computer science, coding, and software engineering.', duration: '4 Years', intake: 480 },
   DTU_CSDS:  { code: 'DTU_CSDS',  college: 'DTU', name: 'CSE (Data Science & Analytics)', campus: 'DTU Main', description: 'Computer science specialized in large scale data analysis and statistics.', duration: '4 Years', intake: 180 },
   DTU_IT:    { code: 'DTU_IT',    college: 'DTU', name: 'Information Technology', campus: 'DTU Main', description: 'Cloud networks, system architecture, database fundamentals.', duration: '4 Years', intake: 180 },
@@ -40,7 +37,6 @@ export const BRANCHES: Record<BranchCode, BranchInfo> = {
   DTU_PIE:   { code: 'DTU_PIE',   college: 'DTU', name: 'Production & Industrial Engg', campus: 'DTU Main', description: 'Operations management, supply chain optimization.', duration: '4 Years', intake: 90 },
   DTU_ENE:   { code: 'DTU_ENE',   college: 'DTU', name: 'Environmental Engineering', campus: 'DTU Main', description: 'Ecology mapping, climate systems, water treatment.', duration: '4 Years', intake: 90 },
   DTU_BT:    { code: 'DTU_BT',    college: 'DTU', name: 'Bio-Technology', campus: 'DTU Main', description: 'Biological sciences applied through computational models.', duration: '4 Years', intake: 90 },
-  // IIITD
   IIITD_CSAM:   { code: 'IIITD_CSAM',   college: 'IIITD', name: 'CS and Applied Mathematics', campus: 'IIITD Okhla', description: 'Rigorous theoretical framework combining mathematics with intensive CS programs.', duration: '4 Years', intake: 60 },
   IIITD_CSAI:   { code: 'IIITD_CSAI',   college: 'IIITD', name: 'CS and Artificial Intelligence', campus: 'IIITD Okhla', description: 'Cutting-edge AI modeling, cognitive science, and heavy neural networking frameworks.', duration: '4 Years', intake: 60 },
   IIITD_CSD:    { code: 'IIITD_CSD',    college: 'IIITD', name: 'Computer Science and Design', campus: 'IIITD Okhla', description: 'UI/UX integration, creative technology, spatial design, and software engineering.', duration: '4 Years', intake: 60 },
@@ -50,7 +46,6 @@ export const BRANCHES: Record<BranchCode, BranchInfo> = {
   IIITD_CSE:    { code: 'IIITD_CSE',    college: 'IIITD', name: 'Computer Science and Engineering', campus: 'IIITD Okhla', description: 'Core software engineering, data structures, and computer architecture.', duration: '4 Years', intake: 120 },
   IIITD_ECE:    { code: 'IIITD_ECE',    college: 'IIITD', name: 'Electronics & Communication', campus: 'IIITD Okhla', description: 'Advanced communication grids, embedded design, and core circuit board design.', duration: '4 Years', intake: 60 },
   IIITD_EVE:    { code: 'IIITD_EVE',    college: 'IIITD', name: 'Electronics and VLSI Engineering', campus: 'IIITD Okhla', description: 'Dedicated VLSI circuits, nanoelectronics, and semiconductor processing labs.', duration: '4 Years', intake: 60 },
-  // IGDTUW (Women's University - GL category only)
   IGDTUW_CSE:  { code: 'IGDTUW_CSE',  college: 'IGDTUW', name: 'Computer Science and Engineering', campus: 'IGDTUW Kashmere Gate', description: 'Premier core CS programming and computer architecture branch exclusively for females.', duration: '4 Years', intake: 200 },
   IGDTUW_CSAI: { code: 'IGDTUW_CSAI', college: 'IGDTUW', name: 'Computer Science and AI', campus: 'IGDTUW Kashmere Gate', description: 'Machine learning fundamentals and data processing pipelines mapping for females.', duration: '4 Years', intake: 150 },
   IGDTUW_IT:   { code: 'IGDTUW_IT',   college: 'IGDTUW', name: 'Information Technology', campus: 'IGDTUW Kashmere Gate', description: 'Web tech, networking applications, and scalable database integrations for females.', duration: '4 Years', intake: 150 },
@@ -59,9 +54,6 @@ export const BRANCHES: Record<BranchCode, BranchInfo> = {
   IGDTUW_DMAM: { code: 'IGDTUW_DMAM', college: 'IGDTUW', name: 'Dual Degree ME + MBA', campus: 'IGDTUW Kashmere Gate', description: 'Integrated B.Tech in Mechanical Automation coupled with Masters in Business Admin.', duration: '5 Years', intake: 60 }
 };
 
-// ─────────────────────────────────────────────────────────────────────────────
-// ACTUAL R1 2026 DATA (unchanged from original - this is real data)
-// ─────────────────────────────────────────────────────────────────────────────
 export const ACTUAL_R1_2026: Record<CategoryCode, Record<BranchCode, number>> = {
   GNGND: {
     NSUT_CSAI: 4133, NSUT_CSE: 8540, NSUT_CSDS: 9881, NSUT_IT: 13639, NSUT_ITNS: 16961, NSUT_MAC: 18887,
@@ -173,310 +165,138 @@ export const ACTUAL_R1_2026: Record<CategoryCode, Record<BranchCode, number>> = 
   }
 };
 
-// ─────────────────────────────────────────────────────────────────────────────
-// ✅ FIXED: Branches introduced after 2021 - properly expanded list
-// ─────────────────────────────────────────────────────────────────────────────
-const BRANCH_INTRO_YEAR: Partial<Record<BranchCode, number>> = {
-  // VLSI branches introduced 2023
-  NSUT_EVDT: 2023,
-  DTU_EVDT:  2023,
-  // EV branch introduced 2023
-  NSUT_MEEV: 2023,
-  // East campus branches introduced 2022
-  NSUT_CSDA: 2022,
-  NSUT_CIOT: 2022,
-  NSUT_ECAM: 2022,
-  // West campus branches introduced 2022
-  NSUT_CE:   2022,
-  NSUT_GI:   2022,
-  // DTU Cyber Security introduced 2023
-  DTU_ITCS:  2023,
+export const ACTUAL_R2_2026: Record<string, Record<string, number>> = {
+  "GNGND": {
+    "DTU_COE": 12771, "DTU_IT": 16917, "DTU_ITCS": 22034, "DTU_SE": 20710, "DTU_MCE": 22993, "DTU_ECE": 25407, "DTU_EVDT": 27580, "DTU_EE": 36049, "DTU_ME": 45100, "DTU_MAE": 47697, "DTU_EP": 49870, "DTU_CH": 55158, "DTU_CE": 61143, "DTU_PIE": 56470, "DTU_ENE": 64715, "DTU_BT": 65714, "NSUT_CSAI": 7791, "NSUT_CSE": 12075, "NSUT_CSDS": 13672, "NSUT_IT": 17321, "NSUT_ITNS": 21488, "NSUT_MAC": 21075, "NSUT_ECE": 28782, "NSUT_EVDT": 29615, "NSUT_EE": 38781, "NSUT_ICE": 43688, "NSUT_ME": 53671, "NSUT_BT": 68245, "NSUT_CSDA": 30721, "NSUT_CIOT": 33057, "NSUT_ECAM": 38942, "NSUT_MEEV": 60174, "NSUT_CE": 69881, "NSUT_GI": 70413, "IIITD_CSAM": 12932, "IIITD_CSAI": 3498, "IIITD_CSB": 24027, "IIITD_CSD": 16983, "IIITD_CSEcon": 13466, "IIITD_CSE": 8282, "IIITD_CSSS": 17814, "IIITD_EVE": 29023, "IIITD_ECE": 24770
+  },
+  "GNGLD": {
+    "DTU_COE": 18208, "DTU_IT": 23590, "DTU_ITCS": 28933, "DTU_SE": 29642, "DTU_MCE": 30094, "DTU_ECE": 31883, "DTU_EVDT": 32776, "DTU_EE": 49092, "DTU_ME": 76849, "DTU_MAE": 77479, "DTU_EP": 91561, "DTU_CH": 96282, "DTU_CE": 112520, "DTU_PIE": 103921, "DTU_ENE": 107248, "DTU_BT": 89684, "NSUT_CSAI": 16342, "NSUT_CSE": 21202, "NSUT_CSDS": 22808, "NSUT_IT": 27347, "NSUT_ITNS": 31858, "NSUT_MAC": 33612, "NSUT_ECE": 40128, "NSUT_EVDT": 42567, "NSUT_EE": 65143, "NSUT_ICE": 99638, "NSUT_ME": 102505, "NSUT_BT": 108721, "NSUT_CSDA": 66417, "NSUT_CIOT": 83569, "NSUT_ECAM": 91781, "NSUT_MEEV": 112890, "NSUT_CE": 118465, "NSUT_GI": 120522, "IGDTUW_CSAI": 48505, "IGDTUW_CSE": 59534, "IGDTUW_ECE": 96592, "IGDTUW_IT": 79134, "IGDTUW_MEAM": 112722, "IGDTUW_DMAM": 117387
+  },
+  "EWGND": {
+    "DTU_COE": 25046, "DTU_IT": 33472, "DTU_ITCS": 35612, "DTU_SE": 38763, "DTU_MCE": 41784, "DTU_ECE": 46509, "DTU_EVDT": 50660, "DTU_EE": 62064, "DTU_ME": 72599, "DTU_MAE": 70775, "DTU_EP": 73820, "DTU_CH": 82616, "DTU_CE": 90594, "DTU_PIE": 84086, "DTU_ENE": 91852, "DTU_BT": 95505, "NSUT_CSAI": 17033, "NSUT_CSE": 27409, "NSUT_CSDS": 31237, "NSUT_IT": 35635, "NSUT_ITNS": 39168, "NSUT_MAC": 42383, "NSUT_ECE": 50813, "NSUT_EVDT": 52940, "NSUT_EE": 62763, "NSUT_ICE": 65703, "NSUT_ME": 77463, "NSUT_BT": 98901, "NSUT_CSDA": 46062, "NSUT_CIOT": 55313, "NSUT_ECAM": 61600, "NSUT_MEEV": 83849, "NSUT_CE": 101119, "NSUT_GI": 110264, "IIITD_CSAM": 37960, "IIITD_CSAI": 22416, "IIITD_CSB": 50435, "IIITD_CSD": 42132, "IIITD_CSEcon": 40752, "IIITD_CSE": 29997, "IIITD_CSSS": 51580, "IIITD_EVE": 54569, "IIITD_ECE": 50881
+  },
+  "EWGLD": {
+    "DTU_COE": 34412, "DTU_IT": 46344, "DTU_SE": 47913, "DTU_MCE": 47384, "DTU_ECE": 59866, "DTU_EVDT": 77950, "DTU_EE": 119162, "DTU_ME": 190814, "DTU_MAE": 137498, "DTU_EP": 190393, "DTU_CE": 171924, "DTU_PIE": 211425, "NSUT_CSAI": 19524, "NSUT_CSE": 37831, "NSUT_CSDS": 43342, "NSUT_IT": 49426, "NSUT_ITNS": 52166, "NSUT_MAC": 54321, "NSUT_ECE": 82499, "NSUT_EVDT": 85456, "NSUT_EE": 170676, "NSUT_ICE": 181188, "NSUT_ME": 190864, "NSUT_BT": 155276, "NSUT_CSDA": 118092, "NSUT_CIOT": 132797, "NSUT_ECAM": 137935, "NSUT_MEEV": 205340, "NSUT_CE": 212112, "NSUT_GI": 155867, "IGDTUW_CSAI": 98573, "IGDTUW_CSE": 107420, "IGDTUW_ECE": 168045, "IGDTUW_IT": 128206, "IGDTUW_MEAM": 200412, "IGDTUW_DMAM": 204938
+  },
+  "OBGND": {
+    "DTU_COE": 52183, "DTU_IT": 59564, "DTU_ITCS": 81930, "DTU_SE": 79461, "DTU_MCE": 90219, "DTU_ECE": 98491, "DTU_EVDT": 104938, "DTU_EE": 132807, "DTU_ME": 171745, "DTU_MAE": 164443, "DTU_EP": 177755, "DTU_CH": 187755, "DTU_CE": 200833, "DTU_PIE": 192175, "DTU_ENE": 214080, "DTU_BT": 216647, "NSUT_CSAI": 27135, "NSUT_CSE": 42757, "NSUT_CSDS": 49657, "NSUT_IT": 66185, "NSUT_ITNS": 83684, "NSUT_MAC": 90716, "NSUT_ECE": 107482, "NSUT_EVDT": 111814, "NSUT_EE": 138613, "NSUT_ICE": 152645, "NSUT_ME": 175163, "NSUT_BT": 223216, "NSUT_CSDA": 111128, "NSUT_CIOT": 120613, "NSUT_ECAM": 136719, "NSUT_MEEV": 202202, "NSUT_CE": 229775, "NSUT_GI": 239245, "IIITD_CSAM": 79740, "IIITD_CSAI": 31975, "IIITD_CSB": 115890, "IIITD_CSD": 96065, "IIITD_CSEcon": 93493, "IIITD_CSE": 58860, "IIITD_CSSS": 116533, "IIITD_EVE": 123680, "IIITD_ECE": 118068
+  },
+  "OBGLD": {
+    "DTU_COE": 88979, "DTU_IT": 94701, "DTU_ITCS": 103166, "DTU_SE": 124253, "DTU_MCE": 152819, "DTU_ECE": 154614, "DTU_EVDT": 197299, "DTU_EE": 306083, "DTU_ME": 371587, "DTU_MAE": 360864, "DTU_EP": 223132, "DTU_CH": 406404, "DTU_CE": 424038, "DTU_PIE": 447415, "DTU_ENE": 399179, "DTU_BT": 379392, "NSUT_CSAI": 68133, "NSUT_CSE": 80369, "NSUT_CSDS": 95648, "NSUT_IT": 107025, "NSUT_ITNS": 124946, "NSUT_MAC": 143918, "NSUT_ECE": 220150, "NSUT_EVDT": 254935, "NSUT_EE": 324067, "NSUT_ICE": 379606, "NSUT_ME": 428019, "NSUT_BT": 463295, "NSUT_CSDA": 178200, "NSUT_CIOT": 205463, "NSUT_ECAM": 370212, "NSUT_MEEV": 454596, "NSUT_CE": 464072, "NSUT_GI": 470452, "IGDTUW_CSAI": 188349, "IGDTUW_CSE": 204502, "IGDTUW_ECE": 366705, "IGDTUW_IT": 272102, "IGDTUW_MEAM": 446242, "IGDTUW_DMAM": 451834
+  },
+  "GNGNO": {
+    "NSUT_CSAI": 4440, "NSUT_CSE": 5709, "NSUT_CSDS": 5820, "NSUT_IT": 6754, "NSUT_ITNS": 7846, "NSUT_MAC": 7759, "NSUT_ECE": 9056, "NSUT_EVDT": 9357, "NSUT_EE": 11212, "NSUT_ICE": 12463, "NSUT_ME": 14951, "NSUT_BT": 18609, "NSUT_CSDA": 8253, "NSUT_CIOT": 9538, "NSUT_ECAM": 10008, "NSUT_MEEV": 15229, "NSUT_CE": 18898, "NSUT_GI": 20108, "IIITD_CSAM": 4259, "IIITD_CSAI": 1350, "IIITD_CSB": 8567, "IIITD_CSD": 6970, "IIITD_CSEcon": 6119, "IIITD_CSSS": 8087, "IIITD_EVE": 7411, "IIITD_ECE": 5623
+  },
+  "EWGNO": {
+    "NSUT_CSAI": 8684, "NSUT_CSE": 7880, "NSUT_CSDS": 9194, "NSUT_IT": 10005, "NSUT_ITNS": 10882, "NSUT_MAC": 10433, "NSUT_ECE": 12811, "NSUT_EVDT": 14416, "NSUT_EE": 15470, "NSUT_ICE": 16100, "NSUT_ME": 19955, "NSUT_BT": 28917, "NSUT_CSDA": 11770, "NSUT_CIOT": 13079, "NSUT_ECAM": 15215, "NSUT_MEEV": 21133, "NSUT_CE": 28613, "IIITD_CSAM": 9402, "IIITD_CSAI": 8911, "IIITD_CSB": 12136, "IIITD_CSD": 9855, "IIITD_CSE": 9159, "IIITD_CSSS": 11189, "IIITD_EVE": 10546
+  },
+  "OBGNO": {
+    "NSUT_CSAI": 12787, "NSUT_CSE": 13158, "NSUT_CSDS": 14099, "NSUT_IT": 15401, "NSUT_ITNS": 16670, "NSUT_MAC": 17270, "NSUT_ECE": 19488, "NSUT_EVDT": 20055, "NSUT_EE": 24460, "NSUT_ICE": 27614, "NSUT_ME": 34142, "NSUT_BT": 40532, "NSUT_CSDA": 19973, "NSUT_CIOT": 21622, "NSUT_ECAM": 21608, "NSUT_MEEV": 38908, "NSUT_CE": 41185, "NSUT_GI": 42220, "IIITD_CSAM": 14334, "IIITD_CSAI": 12106, "IIITD_CSB": 18314, "IIITD_CSD": 16306, "IIITD_CSEcon": 14850, "IIITD_CSE": 12604, "IIITD_CSSS": 18106, "IIITD_EVE": 20421, "IIITD_ECE": 17093
+  },
+  "GNGLO": {
+    "NSUT_CSAI": 7541, "NSUT_CSE": 8100, "NSUT_IT": 13709, "NSUT_ITNS": 12486, "NSUT_MAC": 13151, "NSUT_ECE": 14139, "NSUT_EVDT": 14637, "NSUT_EE": 18881, "NSUT_ICE": 21018, "NSUT_ME": 27999, "NSUT_BT": 26684, "NSUT_CIOT": 15723, "NSUT_ECAM": 15166, "NSUT_MEEV": 28665, "NSUT_CE": 31755, "NSUT_GI": 32678, "IGDTUW_CSAI": 21456, "IGDTUW_CSE": 21036, "IGDTUW_ECE": 26387, "IGDTUW_IT": 25004, "IGDTUW_MEAM": 31308, "IGDTUW_DMAM": 31532
+  },
+  "EWGLO": {
+    "NSUT_CSAI": 11408, "NSUT_CSE": 21706, "NSUT_CSDS": 15455, "NSUT_IT": 23916, "NSUT_MAC": 25131, "NSUT_ECE": 15647, "NSUT_EVDT": 36080, "NSUT_EE": 36816, "NSUT_ICE": 52725, "NSUT_ME": 35434, "NSUT_BT": 58591, "NSUT_CSDA": 38987, "NSUT_CIOT": 39586, "NSUT_ECAM": 30423, "NSUT_MEEV": 57439, "NSUT_CE": 57677, "IGDTUW_CSAI": 25378, "IGDTUW_CSE": 26089, "IGDTUW_ECE": 32540, "IGDTUW_IT": 29187, "IGDTUW_MEAM": 34622
+  },
+  "OBGLO": {
+    "NSUT_CSAI": 15776, "NSUT_CSE": 21706, "NSUT_CSDS": 96236, "NSUT_IT": 23916, "NSUT_ITNS": 159157, "NSUT_MAC": 25131, "NSUT_ECE": 31171, "NSUT_EVDT": 36080, "NSUT_EE": 36816, "NSUT_ICE": 52725, "NSUT_ME": 53120, "NSUT_BT": 58591, "NSUT_CSDA": 38987, "NSUT_CIOT": 39586, "NSUT_ECAM": 40599, "NSUT_MEEV": 57439, "NSUT_CE": 1421001, "IGDTUW_CSAI": 41209, "IGDTUW_CSE": 35298, "IGDTUW_ECE": 50599, "IGDTUW_IT": 43857, "IGDTUW_MEAM": 57216, "IGDTUW_DMAM": 61253
+  }
 };
 
-// ─────────────────────────────────────────────────────────────────────────────
-// ✅ FIXED: Helper to compute monotonically correct jumpPercent
-// ─────────────────────────────────────────────────────────────────────────────
-function computeJumpPercent(
-  category: CategoryCode,
-  r1: number,
-  isOS: boolean
-): number {
+const BRANCH_INTRO_YEAR: Partial<Record<BranchCode, number>> = {
+  NSUT_EVDT: 2023, DTU_EVDT: 2023, NSUT_MEEV: 2023, NSUT_CSDA: 2022, NSUT_CIOT: 2022, NSUT_ECAM: 2022, NSUT_CE: 2022, NSUT_GI: 2022, DTU_ITCS: 2023,
+};
+
+function computeJumpPercent(category: CategoryCode, r1: number, isOS: boolean): number {
   let jumpPercent: number;
-
   if (category.startsWith('EW')) {
-    // EW: moderate slides
-    if (r1 < 30_000) {
-      // Segment 1: 0.16 → ~0.25 at boundary
-      jumpPercent = 0.16 + (r1 / 320_000);
-    } else if (r1 < 70_000) {
-      // ✅ FIX: floor = segment1(30000) = 0.16 + 0.09375 = 0.25375
-      const seg1Boundary = 0.16 + (30_000 / 320_000); // 0.25375
-      jumpPercent = Math.max(0.20 + (r1 / 550_000), seg1Boundary);
-    } else {
-      // ✅ FIX: floor = segment2(70000) = max(0.20 + 70000/550000, 0.25375)
-      //                                 = max(0.3272, 0.25375) = 0.3272
-      const seg2Boundary = Math.max(0.20 + (70_000 / 550_000), 0.25375);
-      jumpPercent = Math.max(0.25 + (r1 / 1_100_000), seg2Boundary);
-    }
+    if (r1 < 30000) jumpPercent = 0.16 + (r1 / 320000);
+    else if (r1 < 70000) jumpPercent = Math.max(0.20 + (r1 / 550000), 0.25375);
+    else jumpPercent = Math.max(0.25 + (r1 / 1100000), 0.3272);
   } else if (category.startsWith('OB')) {
-    // OBC: reduced slides
-    if (r1 < 50_000) {
-      // Segment 1: 0.15 → 0.25 at boundary
-      jumpPercent = 0.15 + (r1 / 500_000);
-    } else if (r1 < 120_000) {
-      // ✅ FIX: floor = segment1(50000) = 0.15 + 0.10 = 0.25
-      const seg1Boundary = 0.15 + (50_000 / 500_000); // 0.25
-      jumpPercent = Math.max(0.18 + (r1 / 900_000), seg1Boundary);
-    } else {
-      // ✅ FIX: floor = segment2(120000) = max(0.18 + 120000/900000, 0.25)
-      //                                  = max(0.3133, 0.25) = 0.3133
-      const seg2Boundary = Math.max(0.18 + (120_000 / 900_000), 0.25);
-      jumpPercent = Math.max(0.20 + (r1 / 2_000_000), seg2Boundary);
-    }
+    if (r1 < 50000) jumpPercent = 0.15 + (r1 / 500000);
+    else if (r1 < 120000) jumpPercent = Math.max(0.18 + (r1 / 900000), 0.25);
+    else jumpPercent = Math.max(0.20 + (r1 / 2000000), 0.3133);
   } else {
-    // General: generous slides
-    if (r1 < 15_000) {
-      // Segment 1: 0.22 → ~0.345 at boundary
-      jumpPercent = 0.22 + (r1 / 120_000);
-    } else if (r1 < 35_000) {
-      // ✅ FIX: floor = segment1(15000) = 0.22 + 0.125 = 0.345
-      const seg1Boundary = 0.22 + (15_000 / 120_000); // 0.345
-      jumpPercent = Math.max(0.26 + (r1 / 250_000), seg1Boundary);
-    } else {
-      // ✅ FIX: floor = segment2(35000) = max(0.26 + 35000/250000, 0.345)
-      //                                 = max(0.40, 0.345) = 0.40
-      const seg2Boundary = Math.max(0.26 + (35_000 / 250_000), 0.345);
-      jumpPercent = Math.max(0.32 + (r1 / 500_000), seg2Boundary);
-    }
+    if (r1 < 15000) jumpPercent = 0.22 + (r1 / 120000);
+    else if (r1 < 35000) jumpPercent = Math.max(0.26 + (r1 / 250000), 0.345);
+    else jumpPercent = Math.max(0.32 + (r1 / 500000), 0.40);
   }
-
-  // ✅ FIX: Outside State has far fewer vacancies - scale down
-  if (isOS) {
-    jumpPercent *= 0.45;
-  }
-
+  if (isOS) jumpPercent *= 0.45;
   return jumpPercent;
 }
 
-// ─────────────────────────────────────────────────────────────────────────────
-// ✅ FIXED: computeTotalJump - dynamic cap based on r1 magnitude
-// ─────────────────────────────────────────────────────────────────────────────
-function computeTotalJump(
-  r1: number,
-  jumpPercent: number,
-  isOS: boolean
-): number {
+function computeTotalJump(r1: number, jumpPercent: number, isOS: boolean): number {
   const baseJump = Math.round(r1 * jumpPercent);
-
-  if (isOS) {
-    // OS: smaller movements, hard cap at 3500
-    const minJump = 300;
-    const maxJump = 3_500;
-    return Math.min(maxJump, Math.max(minJump, baseJump));
-  }
-
-  // ✅ FIX: Dynamic cap so high-rank OBC/EW branches get realistic movement
-  // Instead of flat 14000, scale cap with r1 tier:
+  if (isOS) return Math.min(3500, Math.max(300, baseJump));
   let maxJumpLimit: number;
-  if (r1 < 30_000)       maxJumpLimit = 12_000;
-  else if (r1 < 80_000)  maxJumpLimit = 18_000;
-  else if (r1 < 180_000) maxJumpLimit = 28_000;
-  else                   maxJumpLimit = 40_000;
-
-  const minJump = 1_200;
-  return Math.min(maxJumpLimit, Math.max(minJump, baseJump));
+  if (r1 < 30000) maxJumpLimit = 12000;
+  else if (r1 < 80000) maxJumpLimit = 18000;
+  else if (r1 < 180000) maxJumpLimit = 28000;
+  else maxJumpLimit = 40000;
+  return Math.min(maxJumpLimit, Math.max(1200, baseJump));
 }
 
-// ─────────────────────────────────────────────────────────────────────────────
-// ✅ FIXED: getPredictionsForCategory - clean loop, skip r1=0 branches
-// ─────────────────────────────────────────────────────────────────────────────
-export function getPredictionsForCategory(
-  category: CategoryCode
-): Record<BranchCode, Prediction2026> {
+export function getPredictionsForCategory(category: CategoryCode): Record<BranchCode, Prediction2026> {
   const predictions: Partial<Record<BranchCode, Prediction2026>> = {};
   const branchList = Object.keys(BRANCHES) as BranchCode[];
   const isOS = category.endsWith('O');
-  const isGL = category.includes('GL'); // Women's category
-
+  const isGL = category.includes('GL');
   for (const branch of branchList) {
     const r1 = ACTUAL_R1_2026[category]?.[branch] ?? 0;
-
-    // ✅ FIX: Skip branches not available for this category
-    if (r1 === 0) {
-      predictions[branch] = {
-        actualR1: 0,
-        worstCase:   { r1: 0, r2: 0, r3: 0, r4: 0, r5: 0, upgradation: 0 },
-        trueOutcome: { r1: 0, r2: 0, r3: 0, r4: 0, r5: 0, upgradation: 0 }
-      };
+    const r2 = ACTUAL_R2_2026[category]?.[branch] ?? 0;
+    if (r1 === 0 || (branch.startsWith('IGDTUW') && !isGL)) {
+      predictions[branch] = { actualR1: 0, actualR2: 0, worstCase: { r1: 0, r2: 0, r3: 0, r4: 0, r5: 0, upgradation: 0 }, trueOutcome: { r1: 0, r2: 0, r3: 0, r4: 0, r5: 0, upgradation: 0 } };
       continue;
     }
-
-    // ✅ FIX: IGDTUW is women-only - non-GL categories get zero predictions
-    if (branch.startsWith('IGDTUW') && !isGL) {
-      predictions[branch] = {
-        actualR1: 0,
-        worstCase:   { r1: 0, r2: 0, r3: 0, r4: 0, r5: 0, upgradation: 0 },
-        trueOutcome: { r1: 0, r2: 0, r3: 0, r4: 0, r5: 0, upgradation: 0 }
-      };
-      continue;
-    }
-
     const jumpPercent = computeJumpPercent(category, r1, isOS);
-    const totalJump   = computeTotalJump(r1, jumpPercent, isOS);
-
-    // ✅ Worst case: tighter - less movement per round
-    const worstCase = {
-      r1,
-      r2:          Math.round(r1 + totalJump * 0.25),
-      r3:          Math.round(r1 + totalJump * 0.35),
-      r4:          Math.round(r1 + totalJump * 0.45),
-      r5:          Math.round(r1 + totalJump * 0.65),
-      upgradation: Math.round(r1 + totalJump * 0.75)
-    };
-
-    // ✅ True outcome: more relaxed - more movement per round
-    const trueOutcome = {
-      r1,
-      r2:          Math.round(r1 + totalJump * 0.35),
-      r3:          Math.round(r1 + totalJump * 0.50),
-      r4:          Math.round(r1 + totalJump * 0.65),
-      r5:          Math.round(r1 + totalJump * 0.85),
-      upgradation: Math.round(r1 + totalJump)
-    };
-
-    predictions[branch] = { actualR1: r1, worstCase, trueOutcome };
+    const totalJump = computeTotalJump(r1, jumpPercent, isOS);
+    const worstCase = { r1, r2: r2 || Math.round(r1 + totalJump * 0.25), r3: Math.round((r2 || r1) + totalJump * (r2 ? 0.15 : 0.35)), r4: Math.round((r2 || r1) + totalJump * (r2 ? 0.25 : 0.45)), r5: Math.round((r2 || r1) + totalJump * (r2 ? 0.45 : 0.65)), upgradation: Math.round((r2 || r1) + totalJump * (r2 ? 0.55 : 0.75)) };
+    const trueOutcome = { r1, r2: r2 || Math.round(r1 + totalJump * 0.35), r3: Math.round((r2 || r1) + totalJump * (r2 ? 0.25 : 0.50)), r4: Math.round((r2 || r1) + totalJump * (r2 ? 0.45 : 0.65)), r5: Math.round((r2 || r1) + totalJump * (r2 ? 0.65 : 0.85)), upgradation: Math.round((r2 || r1) + totalJump * (r2 ? 0.85 : 1.0)) };
+    predictions[branch] = { actualR1: r1, actualR2: r2, worstCase, trueOutcome };
   }
-
   return predictions as Record<BranchCode, Prediction2026>;
 }
 
-// ─────────────────────────────────────────────────────────────────────────────
-// ✅ FIXED: getHistoricalCutoffsForCategory - proper branch intro year guards
-// ─────────────────────────────────────────────────────────────────────────────
-export function getHistoricalCutoffsForCategory(
-  category: CategoryCode
-): Record<BranchCode, CutoffData[]> {
+export function getHistoricalCutoffsForCategory(category: CategoryCode): Record<BranchCode, CutoffData[]> {
   const historical: Partial<Record<BranchCode, CutoffData[]>> = {};
   const branchList = Object.keys(BRANCHES) as BranchCode[];
   const isOS = category.endsWith('O');
-
   for (const branch of branchList) {
     const r1_2026 = ACTUAL_R1_2026[category]?.[branch] ?? 0;
-    const introYear = BRANCH_INTRO_YEAR[branch] ?? 2021; // default: existed since 2021
-
+    const introYear = BRANCH_INTRO_YEAR[branch] ?? 2021;
     const years = [2021, 2022, 2023, 2024, 2025];
-
     historical[branch] = years.map((year) => {
-      // ✅ FIX: Use BRANCH_INTRO_YEAR map instead of hardcoded branch names
-      if (year < introYear) {
-        return { year, r1: 0, r2: 0, r3: 0, r4: 0, r5: 0, upgradation: 0 };
-      }
-
-      // ✅ FIX: r1_2026 = 0 means branch not available for this category
-      if (r1_2026 === 0) {
-        return { year, r1: 0, r2: 0, r3: 0, r4: 0, r5: 0, upgradation: 0 };
-      }
-
-      // ✅ FIX: Removed dead `devIdx` variable - use year directly
+      if (year < introYear || r1_2026 === 0) return { year, r1: 0, r2: 0, r3: 0, r4: 0, r5: 0, upgradation: 0 };
       let discountRatio: number;
-
       if (category.startsWith('EW')) {
-        // EWS category historical ratios
-        switch (year) {
-          case 2021: discountRatio = 0.55; break;
-          case 2022: discountRatio = 0.75; break;
-          case 2023: discountRatio = 0.90; break;
-          case 2024: discountRatio = 0.85; break; // strict year
-          case 2025: discountRatio = 1.05; break; // relaxed year
-          default:   discountRatio = 0.90;
-        }
+        switch (year) { case 2021: discountRatio = 0.55; break; case 2022: discountRatio = 0.75; break; case 2023: discountRatio = 0.90; break; case 2024: discountRatio = 0.85; break; case 2025: discountRatio = 1.05; break; default: discountRatio = 0.90; }
       } else if (category.startsWith('OB')) {
-        // OBC category historical ratios
-        switch (year) {
-          case 2021: discountRatio = 0.60; break;
-          case 2022: discountRatio = 0.70; break;
-          case 2023: discountRatio = 0.82; break;
-          case 2024: discountRatio = 0.95; break;
-          case 2025: discountRatio = 0.92; break;
-          default:   discountRatio = 0.82;
-        }
+        switch (year) { case 2021: discountRatio = 0.60; break; case 2022: discountRatio = 0.70; break; case 2023: discountRatio = 0.82; break; case 2024: discountRatio = 0.95; break; case 2025: discountRatio = 0.92; break; default: discountRatio = 0.82; }
       } else {
-        // General category historical ratios
-        switch (year) {
-          case 2021: discountRatio = 0.65; break;
-          case 2022: discountRatio = 0.80; break;
-          case 2023: discountRatio = 0.85; break;
-          case 2024: discountRatio = 0.98; break; // near-strict
-          case 2025: discountRatio = 0.92; break;
-          default:   discountRatio = 0.85;
-        }
+        switch (year) { case 2021: discountRatio = 0.65; break; case 2022: discountRatio = 0.80; break; case 2023: discountRatio = 0.85; break; case 2024: discountRatio = 0.98; break; case 2025: discountRatio = 0.92; break; default: discountRatio = 0.85; }
       }
-
       const yearR1 = Math.round(r1_2026 * discountRatio);
-
-      // ✅ FIX: Dynamic jump ratio - older years had bigger physical reporting gaps
       const baseJumpRatio = isOS ? 0.08 : 0.12;
-      const jumpRatio = year <= 2023
-        ? baseJumpRatio * 1.3   // older years had larger upgradation movements
-        : baseJumpRatio;
-
-      const jumpBase = isOS ? 400 : 1_500;
-
-      // ✅ FIX: Dynamic historical cap matching prediction logic
+      const jumpRatio = year <= 2023 ? baseJumpRatio * 1.3 : baseJumpRatio;
+      const jumpBase = isOS ? 400 : 1500;
       let maxJumpLimit: number;
-      if (isOS) {
-        maxJumpLimit = 3_000;
-      } else if (yearR1 < 30_000)       maxJumpLimit = 10_000;
-      else if (yearR1 < 80_000)         maxJumpLimit = 16_000;
-      else if (yearR1 < 180_000)        maxJumpLimit = 25_000;
-      else                              maxJumpLimit = 38_000;
-
-      const maxJump = Math.min(
-        maxJumpLimit,
-        Math.round(yearR1 * jumpRatio) + jumpBase
-      );
-
-      return {
-        year,
-        r1:          yearR1,
-        r2:          Math.round(yearR1 + maxJump * 0.20),
-        r3:          Math.round(yearR1 + maxJump * 0.45),
-        r4:          Math.round(yearR1 + maxJump * 0.65),
-        r5:          Math.round(yearR1 + maxJump * 0.80),
-        upgradation: Math.round(yearR1 + maxJump)
-      };
+      if (isOS) maxJumpLimit = 3000;
+      else if (yearR1 < 30000) maxJumpLimit = 10000;
+      else if (yearR1 < 80000) maxJumpLimit = 16000;
+      else if (yearR1 < 180000) maxJumpLimit = 25000;
+      else maxJumpLimit = 38000;
+      const maxJump = Math.min(maxJumpLimit, Math.round(yearR1 * jumpRatio) + jumpBase);
+      return { year, r1: yearR1, r2: Math.round(yearR1 + maxJump * 0.20), r3: Math.round(yearR1 + maxJump * 0.45), r4: Math.round(yearR1 + maxJump * 0.65), r5: Math.round(yearR1 + maxJump * 0.80), upgradation: Math.round(yearR1 + maxJump) };
     });
   }
-
   return historical as Record<BranchCode, CutoffData[]>;
 }
 
-// ─────────────────────────────────────────────────────────────────────────────
-// Core Analysis Factors (unchanged)
-// ─────────────────────────────────────────────────────────────────────────────
 export const CORE_FACTORS = [
-  {
-    title: 'Digital Validation Surge',
-    description: 'Automated document processing via portals causes verification to be highly reliable, stabilizing the early rounds with high competition.',
-    trend: 'Intense Competition',
-    impact: 'Stricter R1 margins'
-  },
-  {
-    title: 'Seat Allocation Expansion',
-    description: 'Increases in core CS and electronics intake at both DTU and NSUT directly influence Upgradation slides favorably for candidates.',
-    trend: 'Expanded Seats',
-    impact: 'Healthy Upgrades'
-  },
-  {
-    title: 'State vs AI Quotas',
-    description: 'Home state applicants (85%) experience much friendlier movement loops than Outside State applicants (15%).',
-    trend: 'Geographic Divide',
-    impact: 'Massive OS limitations'
-  },
-  {
-    title: 'Upgradation Vacuum',
-    description: 'Upgradation works distinctly because spot round applicants are barred. This assures current registered holders a secured upward slide.',
-    trend: 'Guaranteed Safe Slide',
-    impact: 'Upward bumps'
-  }
+  { title: 'Digital Validation Surge', description: 'Automated document processing via portals causes verification to be highly reliable, stabilizing the early rounds with high competition.', trend: 'Intense Competition', impact: 'Stricter R1 margins' },
+  { title: 'Seat Allocation Expansion', description: 'Increases in core CS and electronics intake at both DTU and NSUT directly influence Upgradation slides favorably for candidates.', trend: 'Expanded Seats', impact: 'Healthy Upgrades' },
+  { title: 'State vs AI Quotas', description: 'Home state applicants (85%) experience much friendlier movement loops than Outside State applicants (15%).', trend: 'Geographic Divide', impact: 'Massive OS limitations' },
+  { title: 'Upgradation Vacuum', description: 'Upgradation works distinctly because spot round applicants are barred. This assures current registered holders a secured upward slide.', trend: 'Guaranteed Safe Slide', impact: 'Upward bumps' }
 ];
