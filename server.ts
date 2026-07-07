@@ -76,6 +76,12 @@ app.post('/api/counselor', async (req, res) => {
       branchDatabase += `${branch.college} | ${branch.name}\n`;
       branchDatabase += `  Code: ${key}\n`;
       branchDatabase += `  R1 (Actual 2026): ${value.actualR1}\n`;
+      if (value.actualR2) {
+        branchDatabase += `  R2 (Actual 2026): ${value.actualR2}\n`;
+      }
+      if (value.actualR3) {
+        branchDatabase += `  R3 (Actual 2026): ${value.actualR3}\n`;
+      }
       branchDatabase += `  Worst Case R2: ${value.worstCase.r2} | R3: ${value.worstCase.r3} | R4: ${value.worstCase.r4} | R5: ${value.worstCase.r5} | Upgrad: ${value.worstCase.upgradation}\n`;
       branchDatabase += `  True Outcome R2: ${value.trueOutcome.r2} | R3: ${value.trueOutcome.r3} | R4: ${value.trueOutcome.r4} | R5: ${value.trueOutcome.r5} | Upgrad: ${value.trueOutcome.upgradation}\n\n`;
     }
@@ -91,8 +97,10 @@ YOUR TASK:
 1. Extract the candidate's JEE Main rank from their message
 2. Group branches into these categories:
    - ✅ HIGH CHANCE (R1): Rank <= R1 value
-   - ⚠️ LIKELY (R2-R3): R1 < Rank <= Worst Case R3
-   - ⚠️ POSSIBLE (R4-R5): Worst Case R3 < Rank <= Worst Case R5
+   - ✅ SECURED (R2): Rank <= R2 value (ONLY if R2 Actual is provided)
+   - ✅ SECURED (R3): Rank <= R3 value (ONLY if R3 Actual is provided)
+   - ⚠️ LIKELY (R3-R4): (If R3 not out: R1 < Rank <= Worst Case R3) OR (If R3 out: R3 < Rank <= Worst Case R4)
+   - ⚠️ POSSIBLE (R5): Worst Case R4 < Rank <= Worst Case R5
    - ⚠️ UPGRADATION: Worst Case R5 < Rank <= Worst Case Upgrad
    - ❌ NOT POSSIBLE: Rank > Worst Case Upgrad
 
@@ -103,10 +111,13 @@ YOUR TASK:
 ✅ HIGH CHANCE (R1):
 [List colleges and branches where rank <= R1, with their R1 values]
 
-⚠️ LIKELY (R2-R3):
+✅ SECURED (R2/R3 Actual):
+[List colleges and branches where rank <= R2 or R3, if data is present]
+
+⚠️ LIKELY:
 [List colleges and branches in this range]
 
-⚠️ POSSIBLE (R4-R5):
+⚠️ POSSIBLE:
 [List colleges and branches in this range]
 
 ⚠️ UPGRADATION POSSIBLE:

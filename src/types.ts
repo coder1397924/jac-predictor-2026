@@ -44,6 +44,7 @@ export interface Prediction2026 {
   trueOutcome: PredictScenario;
   actualR1: number;
   actualR2?: number;
+  actualR3?: number;
 }
 
 export interface AnalysisSummary {
