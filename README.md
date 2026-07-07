@@ -1,6 +1,5 @@
 # JAC Delhi 2026 Cutoff Predictor with AI Counselor
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Node](https://img.shields.io/badge/node-%3E%3D16.0.0-brightgreen.svg)
 ![React](https://img.shields.io/badge/react-18%2B-61DAFB.svg)
 ![TypeScript](https://img.shields.io/badge/typescript-5%2B-3178C6.svg)
@@ -73,6 +72,9 @@ git clone [https://github.com/kavyaGupta747/JAC-Delhi-cutoff-predictor-2026-with
 cd JAC-Delhi-cutoff-predictor-2026-with-AI
 ```
 ### 🕒 Latest Updates (July 2026)
+- **v3.0.0 (July 2026):** Integrated official Round 3 cutoff data for DTU, NSUT and IGDTUW.
+Updated prediction engine logic to account for Round 3 closing trends.
+Enhanced UI labels to display the latest Round 3 actuals.
 - **v2.0.0 (July 2026):** Integrated Official Round 2 Cutoff Data for all participating institutes (DTU, NSUT, IIIT-D, and IGDTUW).
 Refined prediction engine logic to account for actual Round 2 closing ranks.
 Updated UI labels to clearly distinguish between "Predicted" and "Actual" cutoff status.
