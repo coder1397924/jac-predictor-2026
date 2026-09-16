@@ -9,7 +9,7 @@
 
 ### 🌐 Live Production Application
 The web app is deployed and live at:  
-👉 **[https://jac-predictor-2026.vercel.app/](https://jac-delhi-cutoff-predictor-2026-with-ai-587323956845.asia-southeast1.run.app/)**
+👉 **[https://jac-predictor-2026.vercel.app/](https://jac-predictor-2026.vercel.app/)**
 
 ---
 
